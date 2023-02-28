@@ -31,10 +31,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Greeting(name: String) {
-    Text(text = "Hi, my name is $name!")
-}
+    Surface(color = androidx.compose.ui.graphics.Color.Green) {
+        Text(text = "Hi, my name is $name!")
+    }
+        }
 
-@Preview(showBackground = false)
+@Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
     GreetingCardTheme {
