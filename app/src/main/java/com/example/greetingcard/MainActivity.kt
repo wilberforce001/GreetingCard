@@ -4,15 +4,15 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.greetingcard.ui.theme.GreetingCardTheme
 import androidx.compose.ui.unit.dp
-import androidx.compose.foundation.layout.padding
+import com.example.greetingcard.ui.theme.GreetingCardTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +36,7 @@ fun Greeting(name: String) {
     Surface(color = androidx.compose.ui.graphics.Color.Green) {
         Text(text = "Hi, my name is $name!", Modifier.padding(24.dp))
     }
-        }
+}
 
 @Preview(showBackground = true)
 @Composable
